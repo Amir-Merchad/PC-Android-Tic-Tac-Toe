@@ -25,8 +25,9 @@ A cross-platform Tic-Tac-Toe game available for both Windows PCs and Android dev
 
 ### 🖥 Windows (Electron version)
 1. Navigate to `MyApp-win32-x64/`
-2. Double-click `MyApp.exe`
-3. Approve Windows Defender if prompted
+2. Extract `MyApp.rar`
+3. Double-click `MyApp.exe`
+4. Approve Windows Defender if prompted
 
 ### 📱 Android
 > NOTE: Requires Android 15 or above
