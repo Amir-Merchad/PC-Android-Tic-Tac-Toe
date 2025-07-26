@@ -1,15 +1,23 @@
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.rar filter=lfs diff=lfs merge=lfs -text
 
-
-# Force classification
-*.js linguist-detectable=true
-*.css linguist-detectable=true
-*.kt linguist-detectable=true
-*.kts linguist-detectable=true
-*.gradle linguist-detectable=true
-
-# Don't count APK files
-*.apk linguist-documentation=true
+# Force languages detection
+*.js linguist-language=JavaScript
+*.json linguist-language=JavaScript
+*.ts linguist-language=TypeScript
 *.kt linguist-language=Kotlin
-*.gradle linguist-language=Groovy
+
+# Ensure detectable
+*.js linguist-detectable=true
+src/**/*.js linguist-detectable=true
+app/**/*.js linguist-detectable=true
+
+# Mark large or generated files as vendored/ignored
+node_modules/** linguist-vendored
+dist/** linguist-vendored
+build/** linguist-vendored
+*.html linguist-vendored
+*.css linguist-vendored
+
+# Explicitly ignore APK output
+*.apk linguist-detectable=false
