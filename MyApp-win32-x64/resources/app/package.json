@@ -1,0 +1,17 @@
+{
+  "name": "pc-tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^37.2.4",
+    "electron-packager": "^17.1.2"
+  }
+}
