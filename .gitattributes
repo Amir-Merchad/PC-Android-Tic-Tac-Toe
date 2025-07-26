@@ -13,11 +13,11 @@
 # ✅ Make sure they are counted
 *.js linguist-detectable=true
 *.kt linguist-detectable=true
-*.css linguist-detectable=true
 *.json linguist-detectable=true
 
 # ❌ Prevent HTML from dominating stats
 *.html linguist-vendored
+*.css linguist-vendored
 
 # ❌ Exclude build, output, and binary folders
 node_modules/** linguist-vendored
